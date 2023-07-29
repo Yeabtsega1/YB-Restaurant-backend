@@ -404,7 +404,9 @@ app.get('/api/cart', async (req, res) => {
   }
 });
 
-
+app.get('/', (req, res) => {
+  res.send('Welcome to YB Restaurant Backend');
+});
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Server is running on ${port}`);
